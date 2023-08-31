@@ -19,18 +19,24 @@ $output = './GmailCleanup.ps.psm1'
 Invoke-WebRequest -Uri $url -OutFile $output``
 
 # Navigate to the cloned directory and Import the module
-``cd GmailCleanupWithPsChat
-Import-Module ./GmailCleaner.psm1``
+```
+cd GmailCleanupWithPsChat
+Import-Module ./GmailCleaner.psm1
+```
 
 ## Configuration
 Before starting, set up your OpenAI API key:
-``# Get OpenAI API Key
+```
+# Get OpenAI API Key
 $apiKey = Read-Host -Prompt "Enter your OpenAI API Key" -AsSecureString
-$ENV:OPENAI_AUTH_TOKEN = [System.Net.NetworkCredential]::new("", $apiKey).Password``
+$ENV:OPENAI_AUTH_TOKEN = [System.Net.NetworkCredential]::new("", $apiKey).Password
+```
 
 ## Usage
 Start the cleanup session:
-``Invoke-GmailCleanupSession``
+```
+Invoke-GmailCleanupSession
+```
 
 ## Advanced Features
 - Manual Overrides: During any step of the cleanup, interject and dictate what action you'd like to be taken.
