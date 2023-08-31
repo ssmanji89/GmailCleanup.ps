@@ -13,10 +13,11 @@ A PowerShell module that integrates Gmail with OpenAI's ChatGPT for intelligent 
 - Gmail Account: Ensure that API access is enabled and set up OAuth2.0 for the Gmail API.
 
 ## Installation
-``$url = 'https://raw.githubusercontent.com/ssmanji89/GmailCleanup.ps/master/GmailCleanup.ps.psm1'
+```
+$url = 'https://raw.githubusercontent.com/ssmanji89/GmailCleanup.ps/master/GmailCleanup.ps.psm1'
 $output = './GmailCleanup.ps.psm1'
-
-Invoke-WebRequest -Uri $url -OutFile $output``
+Invoke-WebRequest -Uri $url -OutFile $output
+```
 
 # Navigate to the cloned directory and Import the module
 ```
